@@ -32,6 +32,39 @@ To github-sub:ds-sl/ds_book.git
    a3a0557..d977b47  main -> main
 ```
 
+```
+(base) hsuzuki-imacpro-3132:r hsuzuki$ cd bookdown/
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ ls
+DA4R2021			bookdown_test
+_bkup				da4r
+bookdown-demo-main		da4r.zip
+bookdown-demo-main.zip		ds_book
+bookdown-demo-main0921.zip
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ git init ds_book
+Reinitialized existing Git repository in /Users/hsuzuki/Documents/computer/r/bookdown/ds_book/.git/
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ ssh -T github-sub
+Hi ds-sl! You've successfully authenticated, but GitHub does not provide shell access.
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ cd ds_book
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git init
+Reinitialized existing Git repository in /Users/hsuzuki/Documents/computer/r/bookdown/ds_book/.git/
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git remote add origin git@github-sub:ds-sl/ds_book.git
+fatal: remote origin already exists.
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git remote rm origin
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git remote add origin git@github-sub:ds-sl/ds_book.git
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ ssh -T github-sub
+Hi ds-sl! You've successfully authenticated, but GitHub does not provide shell access.
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github-sub:ds-sl/ds_book.git'
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git status
+On branch main
+nothing to commit, working tree clean
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git push -u origin main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ 
+````
+
 I don't know why it does not work
 Restarted!
 Worked some more.
