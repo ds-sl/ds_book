@@ -15,6 +15,22 @@ description: Book on an introducion to data-science
 This is a test version of Introduction using bookdown-demo template from remote
 
 * With an error: erased the bs4_book from output.yml # bookdown::bs4_book: default
+* On Terminal
+```
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ cd ../
+(base) hsuzuki-imacpro-3132:bookdown hsuzuki$ git init ds_book
+Reinitialized existing Git repository in /Users/hsuzuki/Documents/computer/r/bookdown/ds_book/.git/
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git remote add origin git@github-sub:ds-sl/ds_book.git
+(base) hsuzuki-imacpro-3132:ds_book hsuzuki$ git push origin main
+Counting objects: 12, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 2.04 KiB | 2.04 MiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+To github-sub:ds-sl/ds_book.git
+   a3a0557..d977b47  main -> main
+```
 
 I don't know why it does not work
 
