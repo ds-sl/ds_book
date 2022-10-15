@@ -16,6 +16,8 @@ This is a test version of Introduction using bookdown-demo template from remote
 
 * With an error: erased the bs4_book from output.yml # bookdown::bs4_book: default
 
+I don't know why it does not work
+
 # Prerequisites
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
